@@ -1,0 +1,11 @@
+:root {
+    --accent: #2B4074;
+    --grey: #4A4A4A;
+    --ligth-grey: #9B9B9B;
+    --white: #FFFFFF;
+}
+
+@mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}

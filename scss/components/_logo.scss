@@ -1,0 +1,16 @@
+.logo {
+  &__link {
+    margin-left: 8px;
+  }
+
+  @media screen and (width > 640px) {
+    &__link {
+      margin-left: 14px;
+    }
+  }
+  @media screen and (width > 768px) {
+    &__link {
+      margin-left: 0;
+    }
+  }
+}
