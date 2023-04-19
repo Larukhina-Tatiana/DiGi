@@ -20,11 +20,11 @@ html{
 
 
 body {
-  font-family: 'RobotoCondensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1;
   color: var(--black);
   min-width: 320px;
   overflow-x: hidden;
@@ -46,9 +46,10 @@ a {
 }
 
 img {
-  display: block;
+  // display: block;
   max-width: 100%;
   height: auto;
+  line-height: 0;
   // width: 100%;
 }
 

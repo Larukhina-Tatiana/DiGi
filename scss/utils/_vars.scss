@@ -3,6 +3,11 @@
     --grey: #4A4A4A;
     --ligth-grey: #9B9B9B;
     --white: #FFFFFF;
+    --green: #476E4D;
+    --bg-color : #F9F6E5;
+
+
+
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){

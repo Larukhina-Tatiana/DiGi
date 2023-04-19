@@ -18,11 +18,11 @@ html {
 }
 
 body {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1;
   color: var(--black);
   min-width: 320px;
   overflow-x: hidden;
@@ -44,9 +44,9 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
+  line-height: 0;
 }
 
 picture {
@@ -75,47 +75,49 @@ button {
   --grey: #4A4A4A;
   --ligth-grey: #9B9B9B;
   --white: #FFFFFF;
+  --green: #476E4D;
+  --bg-color: #F9F6E5;
 }
 
 @font-face {
   font-family: "Dosis";
-  src: url("../fonts/Dosis-Light.ttf");
+  src: url("../fonts/Dosis-Light.woff2") format("woff2"), url("../fonts/Dosis-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Regular.ttf");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Dosis";
-  src: url("../fonts/Dosis-Regular.ttf");
+  src: url("../fonts/Dosis-Regular.woff2") format("woff2"), url("../fonts/Dosis-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Bold.ttf");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Dosis";
-  src: url("../fonts/Dosis-Bold.ttf");
+  src: url("../fonts/Dosis-Bold..woff2") format("woff2"), url("../fonts/Dosis-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -199,5 +201,177 @@ button {
 @media screen and (width > 1440px) {
   .menu__button {
     margin-right: 90px;
+  }
+}
+
+.hero {
+  background-image: url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 193px;
+}
+.hero__slider {
+  min-height: 193px;
+  background: rgba(33, 33, 33, 0.5);
+}
+.hero__slider-item {
+  color: var(--white);
+  text-align: center;
+}
+.hero__slider-title {
+  position: relative;
+  max-width: 243px;
+  margin: 0 auto;
+  padding: 36px 0 28px;
+  font-family: "RobotoCondensed";
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.hero__slider-title::after {
+  position: absolute;
+  content: "";
+  width: 62px;
+  height: 8px;
+  background-color: var(--grey);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.hero__slider-btn {
+  display: none;
+}
+.hero__slider-text {
+  display: none;
+}
+@media screen and (width > 640px) {
+  .hero {
+    min-height: 386px;
+  }
+  .hero__slider {
+    min-height: 386px;
+  }
+  .hero__slider-title {
+    max-width: 522px;
+    margin-bottom: 30px;
+    padding: 50px 0 15px;
+    font-size: 60px;
+  }
+  .hero__slider .hero__slider-btn {
+    display: block;
+    margin: 0 auto 113px;
+    padding: 16px 45px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bg-color);
+    text-transform: uppercase;
+  }
+}
+@media screen and (width > 768px) {
+  .hero__slider {
+    min-height: 465px;
+  }
+  .hero__slider-title {
+    margin-bottom: 0;
+    padding: 87px 0 0;
+  }
+  .hero__slider-title::after {
+    display: none;
+  }
+  .hero__slider-text {
+    max-width: 587px;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0 32px;
+    font-family: "RobotoCondensed";
+    font-size: 18px;
+    line-height: 1.1111111111;
+    color: var(--white);
+  }
+}
+@media screen and (width > 1024px) {
+  .hero__slider {
+    min-height: 618px;
+  }
+  .hero__slider-title {
+    max-width: 750px;
+    padding: 101px 0 0;
+    font-size: 84px;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (width > 1440px) {
+  .hero__slider {
+    min-height: 668px;
+  }
+  .hero__slider-title {
+    max-width: 865px;
+    padding: 107px 0 0;
+    font-size: 96px;
+    letter-spacing: 2px;
+  }
+  .hero__slider-text {
+    max-width: 886px;
+    padding: 25px 0 32px;
+    font-size: 24px;
+    line-height: 1.0833333333;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.slick-dots button {
+  margin: 0 10px;
+  padding: 0;
+  font-size: 0;
+  background-color: var(--accent);
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background-color: transparent;
+  border: 1px solid var(--green);
+}
+
+@media screen and (width > 640px) {
+  .slick-dots {
+    bottom: 50px;
+  }
+  .slick-arrow {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: none;
+    right: 0;
+    z-index: 5;
+  }
+  .slick-prev {
+    background-color: var(--accent);
+    top: calc(50% - 56px);
+  }
+  .slick-next {
+    background-color: var(--bg-color);
+    bottom: calc(50% - 56px);
+  }
+}
+@media screen and (width > 1024px) {
+  .slick-dots {
+    bottom: 80px;
   }
 }/*# sourceMappingURL=style.css.map */

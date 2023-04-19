@@ -1,0 +1,141 @@
+.hero {
+  background-image: url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 193px;
+
+
+  &__slider {
+    min-height: 193px;
+    background: rgba(33, 33, 33, 0.5);
+
+    &-item {
+      color: var(--white);
+      text-align: center;
+    }
+
+    &-title {
+      position: relative;
+      max-width: 243px;
+      margin: 0 auto;
+      padding: 36px 0 28px;
+      font-family: 'RobotoCondensed';
+      font-weight: 400;
+      font-size: 28px;
+      text-transform: uppercase;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 62px;
+        height: 8px;
+        background-color: var(--grey);
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &-btn {
+      display: none;
+    }
+
+    &-text {
+      display: none;
+    }
+  }
+
+  @media screen and (width > 640px) {
+    min-height: 386px;
+
+    // background-position: -162px center;
+    &__slider {
+      min-height: 386px;
+
+      &-title {
+        max-width: 522px;
+        margin-bottom: 30px;
+        padding: 50px 0 15px;
+        font-size: 60px;
+      }
+
+      & &-btn {
+        display: block;
+        margin: 0 auto 113px;
+        padding: 16px 45px;
+        background-color: var(--accent);
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: calc(18/18);
+        color: var(--bg-color);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (width > 768px) {
+    &__slider {
+      min-height: 465px;
+
+      &-title {
+        margin-bottom: 0;
+        padding: 87px 0 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &-text {
+        max-width: 587px;
+        display: block;
+        margin: 0 auto;
+        padding: 25px 0 32px;
+        font-family: 'RobotoCondensed';
+        font-size: 18px;
+        line-height: calc(20/18);
+        color: var(--white);
+      }
+    }
+  }
+
+  @media screen and (width > 1024px) {
+    &__slider {
+      min-height: 618px;
+
+      &-title {
+        max-width: 750px;
+        padding: 101px 0 0;
+        font-size: 84px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  @media screen and (width > 1440px) {
+    &__slider {
+      min-height: 668px;
+
+      &-title {
+        max-width: 865px;
+        padding: 107px 0 0;
+        font-size: 96px;
+        letter-spacing: 2px;
+      }
+
+      &-text {
+        max-width: 886px;
+        padding: 25px 0 32px;
+        font-size: 24px;
+        line-height: calc(26/24);
+
+      }
+    }
+  }
+
+}

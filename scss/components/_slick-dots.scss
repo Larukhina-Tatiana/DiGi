@@ -1,0 +1,58 @@
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 10px;
+    padding: 0;
+    font-size: 0;
+    background-color: var(--accent);
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+  }
+}
+
+.slick-active {
+  button {
+    background-color: transparent;
+    border: 1px solid var(--green);
+  }
+}
+
+
+@media screen and (width > 640px) {
+  .slick-dots {
+    bottom: 50px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: none;
+    right: 0;
+    z-index: 5;
+  }
+
+  .slick-prev {
+    background-color: var(--accent);
+    top: calc(50% - 56px);
+  }
+
+  .slick-next {
+    background-color: var(--bg-color);
+    bottom: calc(50% - 56px);
+  }
+}
+
+@media screen and (width > 1024px) {
+  .slick-dots {
+    bottom: 80px;
+  }
+}
