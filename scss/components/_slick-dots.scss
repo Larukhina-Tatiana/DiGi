@@ -56,3 +56,18 @@
     bottom: 80px;
   }
 }
+
+@media screen and (width > 1440px) {
+  .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+
+  .slick-prev {
+    top: calc(50% - 70px);
+  }
+
+  .slick-next {
+    bottom: calc(50% - 70px);
+  }
+}

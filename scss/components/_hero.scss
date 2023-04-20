@@ -74,6 +74,13 @@
         line-height: calc(18/18);
         color: var(--bg-color);
         text-transform: uppercase;
+        @include transition ($transition-property: (color, background-color));
+
+        &:hover,
+        &:focus {
+          color: var(--accent);
+          background-color: var(--bg-color);
+        }
       }
     }
   }
@@ -133,7 +140,6 @@
         padding: 25px 0 32px;
         font-size: 24px;
         line-height: calc(26/24);
-
       }
     }
   }

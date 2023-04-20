@@ -4,13 +4,17 @@
     --ligth-grey: #9B9B9B;
     --white: #FFFFFF;
     --green: #476E4D;
-    --bg-color : #F9F6E5;
-
-
-
+    --bg-color: #F9F6E5;
 }
 
-@mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
+%dosis-300 {
+    font-family: 'Dosis';
+    font-weight: 300;
+}
+
+@mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 }
+
+// @include transition ($transition-property: (color, background-color));
