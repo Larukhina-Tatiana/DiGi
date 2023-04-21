@@ -27,7 +27,6 @@
     color: var(--ligth-grey);
   }
 
-
   // li
   &__item {
     padding: 0 18px;
@@ -37,17 +36,20 @@
     justify-content: center;
     border: 1px solid var(--bg-color);
     border-bottom: none;
-    @include transition ($transition-property: (padding, border));
 
-    &:last-child {
-      border-bottom: 1px solid var(--bg-color);
+    @media screen and (max-width: 640px) {
+      &:last-child {
+        border-bottom: 1px solid var(--bg-color);
+      }
     }
 
     &:hover {
+
       .services__text,
       .services__link {
         display: block;
       }
+
       .services__title {
         margin-bottom: 30px;
       }
@@ -57,7 +59,9 @@
         padding: 25px 20px 5px;
         border: 4px solid var(--accent);
         min-height: 277px;
+        @include transition ($transition-property: border);
       }
+
       .services__img {
         margin-bottom: 14px;
       }
@@ -85,6 +89,7 @@
     // font-family: 'Dosis';
     margin-bottom: 17px;
     line-height: calc(18/16);
+    // @include transition ($transition-property: display);
   }
 
   &__link {
@@ -96,5 +101,60 @@
     letter-spacing: 2px;
     color: var(--accent);
     text-transform: uppercase;
+    @include transition ($transition-property: (color, display));
+
+    &:hover {
+      color: var(--green);
+    }
   }
+
+  @media screen and (width > 640px) {
+    &__conten-descr {
+      font-size: 24px;
+    }
+
+    &__conten-text {
+      font-size: 18px;
+      line-height: calc(24/18);
+    }
+    // li
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+  @media screen and (width > 768px) {
+    padding-top: 50px;
+    &__conten-title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 27px;
+    }
+    &__list {
+      margin: 0 -40px;
+    }
+    &__item {
+      min-height: 334px;
+      padding: 0 66px;
+      &:hover{
+        .services__item-border {
+          margin: 18px 0;
+          padding: 35px 34px 5px;
+          min-height: 288px;
+
+        }
+      }
+    }
+  }
+  
+  // @media screen and (width > 1024px) {
+  //   &__item {
+  //     flex-basis: 25%;
+  //   }
+  // }
 }

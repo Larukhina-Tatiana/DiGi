@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
@@ -27,7 +27,12 @@ html{
     bottom: 0;
     background-color: var(--accent);
   }
+
+  @media screen and (width > 640px) {
+    font-size: 48px;
+    line-height: calc(56/48);
   }
+}
 
 
 body {
@@ -98,4 +103,3 @@ button {
 //   clip-path: inset(50%);
 //   margin: -1px;
 // }
-
