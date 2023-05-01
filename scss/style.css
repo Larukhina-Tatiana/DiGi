@@ -511,7 +511,7 @@ button {
   color: var(--ligth-grey);
 }
 .services__item {
-  padding: 0 18px;
+  padding: 0 13px;
   min-height: 310px;
   display: flex;
   flex-direction: column;
@@ -538,12 +538,10 @@ button {
   padding: 25px 33px 5px;
   border: 4px solid var(--accent);
   min-height: 277px;
+  transition: all 0.5s;
 }
 .services__item:hover .services__img {
   margin-bottom: 14px;
-}
-.services__item-border {
-  transition: all 0.5s;
 }
 .services__img {
   width: 64px;
@@ -603,7 +601,7 @@ button {
     flex-basis: 50%;
   }
 }
-@media screen and (width > 768px) {
+@media screen and (width > 767px) {
   .services {
     padding-top: 50px;
   }
@@ -625,7 +623,7 @@ button {
     min-height: 288px;
   }
 }
-@media screen and (width > 1024px) {
+@media screen and (width > 1023px) {
   .services {
     padding-top: 52px;
   }
@@ -653,7 +651,7 @@ button {
     padding: 21px 9px 5px;
   }
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .services {
     padding-top: 0;
   }
@@ -867,9 +865,17 @@ button {
   line-height: 18px;
   padding: 21px 26px;
   background-color: var(--accent);
+  border: 1px solid transparent;
   border-radius: 3px;
   color: var(--bg-color);
   text-transform: uppercase;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__btm:hover, .team__btm:focus {
+  color: var(--accent);
+  background-color: var(--bg-color);
+  border-color: var(--accent);
 }
 @media screen and (width > 639px) {
   .team {

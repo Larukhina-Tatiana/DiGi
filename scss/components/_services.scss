@@ -29,7 +29,7 @@
 
   // li
   &__item {
-    padding: 0 18px;
+    padding: 0 13px;
     min-height: 310px;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,7 @@
         padding: 25px 33px 5px;
         border: 4px solid var(--accent);
         min-height: 277px;
+        transition: all .5s;
       }
 
       .services__img {
@@ -68,10 +69,7 @@
     }
   }
 
-  &__item-border {
-    transition: all .5s;
-  }
-
+  
   &__img {
     width: 64px;
     height: 64px;
@@ -140,7 +138,7 @@
     }
   }
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
     padding-top: 50px;
 
     &__conten-title {
@@ -169,7 +167,7 @@
     }
   }
 
-  @media screen and (width > 1024px) {
+  @media screen and (width > 1023px) {
     padding-top: 52px;
 
     &__title {
@@ -200,7 +198,7 @@
     }
   }
 
-  @media screen and (width > 1440px) {
+  @media screen and (width > 1439px) {
     
     padding-top: 0;
     &__wrapper {
