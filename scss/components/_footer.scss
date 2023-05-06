@@ -1,7 +1,6 @@
 .footer {
   position: relative;
   padding-top: calc(15px + 60px / 2);
-  padding-bottom: 65px;
   text-align: center;
   color: var(--white);
 
@@ -12,7 +11,7 @@
     left: 0;
     background-color: #2B4074;
     width: 100%;
-    min-height: 954px;
+    height: 954px;
     z-index: -1;
   }
 

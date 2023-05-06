@@ -1133,7 +1133,6 @@ button {
 .footer {
   position: relative;
   padding-top: 45px;
-  padding-bottom: 65px;
   text-align: center;
   color: var(--white);
 }
@@ -1144,7 +1143,7 @@ button {
   left: 0;
   background-color: #2B4074;
   width: 100%;
-  min-height: 954px;
+  height: 954px;
   z-index: -1;
 }
 .footer p {
