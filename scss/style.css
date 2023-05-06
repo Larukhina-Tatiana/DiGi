@@ -37,6 +37,9 @@ html {
     margin-left: 0;
   }
 }
+.subtitle--center::after {
+  margin: 0 auto;
+}
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1020,6 +1023,23 @@ button {
 @media screen and (width > 639px) {
   .news__title {
     margin-bottom: 60px;
+  }
+  .news__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .news__item {
+    margin: 0;
+  }
+}
+@media screen and (width > 1439px) {
+  .news__title {
+    margin-bottom: 60px;
+  }
+  .news__title .subtitle::affter {
+    margin: 0 auto;
   }
   .news__list {
     display: flex;
