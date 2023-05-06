@@ -47,7 +47,7 @@
     }
   }
 
-  @media screen and (width > 640px) {
+  @media screen and (width > 639px) {
     min-height: 386px;
 
     &__slider {
@@ -84,7 +84,7 @@
     }
   }
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
     &__slider {
       min-height: 465px;
 
@@ -110,7 +110,7 @@
     }
   }
 
-  @media screen and (width > 1024px) {
+  @media screen and (width > 1023px) {
     &__slider {
       min-height: 618px;
 
@@ -123,7 +123,7 @@
     }
   }
 
-  @media screen and (width > 1440px) {
+  @media screen and (width > 1439px) {
     &__slider {
       min-height: 668px;
 

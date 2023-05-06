@@ -26,13 +26,13 @@ html {
   bottom: 0;
   background-color: var(--accent);
 }
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .subtitle {
     font-size: 48px;
     line-height: 1.1666666667;
   }
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .subtitle::after {
     margin-left: 0;
   }
@@ -98,6 +98,20 @@ button {
 }
 
 /* Скрытие заголовка */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 :root {
   --accent: #2B4074;
   --grey: #4A4A4A;
@@ -188,7 +202,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .header__inner {
     min-height: 100px;
   }
@@ -248,7 +262,7 @@ button {
   left: 14px;
   box-shadow: 0 4px 0 0 var(--accent), 0 8px 0 0 var(--accent);
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .menu__button {
     margin-right: 90px;
   }
@@ -296,7 +310,7 @@ button {
 .hero__slider-text {
   display: none;
 }
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .hero {
     min-height: 386px;
   }
@@ -330,7 +344,7 @@ button {
     background-color: var(--bg-color);
   }
 }
-@media screen and (width > 768px) {
+@media screen and (width > 767px) {
   .hero__slider {
     min-height: 465px;
   }
@@ -352,7 +366,7 @@ button {
     color: var(--white);
   }
 }
-@media screen and (width > 1024px) {
+@media screen and (width > 1023px) {
   .hero__slider {
     min-height: 618px;
   }
@@ -363,7 +377,7 @@ button {
     letter-spacing: 2px;
   }
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .hero__slider {
     min-height: 668px;
   }
@@ -405,7 +419,7 @@ button {
   border: 1px solid var(--green);
 }
 
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .slick-dots {
     bottom: 50px;
   }
@@ -426,12 +440,12 @@ button {
     bottom: calc(50% - 56px);
   }
 }
-@media screen and (width > 1024px) {
+@media screen and (width > 1023px) {
   .slick-dots {
     bottom: 80px;
   }
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .slick-arrow {
     width: 70px;
     height: 70px;
@@ -477,7 +491,7 @@ button {
   color: var(--bg-color);
   border: 1px solid var(--bg-color);
 }
-@media screen and (width > 768px) {
+@media screen and (width > 767px) {
   .promo {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -501,12 +515,12 @@ button {
     min-height: 50px;
   }
 }
-@media screen and (width > 1024px) {
+@media screen and (width > 1023px) {
   .promo__inner {
     max-width: 695px;
   }
 }
-@media screen and (width > 1440px) {
+@media screen and (width > 1439px) {
   .promo__wrapper {
     padding: 0 80px;
   }
@@ -549,7 +563,7 @@ button {
   border: 1px solid var(--bg-color);
   border-bottom: none;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
   .services__item:last-child {
     border-bottom: 1px solid var(--bg-color);
   }
@@ -610,7 +624,7 @@ button {
 .services__link:hover {
   color: var(--green);
 }
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .services {
     padding-bottom: 0px;
   }
@@ -793,7 +807,7 @@ button {
   background-color: var(--accent);
   border-radius: 5px;
 }
-@media screen and (width > 640px) {
+@media screen and (width > 639px) {
   .projects {
     padding: 40px 0 20px;
   }
@@ -816,7 +830,7 @@ button {
     line-height: 1.15;
   }
 }
-@media screen and (width > 768px) {
+@media screen and (width > 767px) {
   .projects {
     padding: 80px 0 60px;
   }
@@ -862,9 +876,6 @@ button {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 0 21px;
-  }
-  .projects__item-inner {
-    gap: 0 15px;
   }
 }
 

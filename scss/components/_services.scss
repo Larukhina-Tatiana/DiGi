@@ -37,7 +37,7 @@
     border: 1px solid var(--bg-color);
     border-bottom: none;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 639px) {
       &:last-child {
         border-bottom: 1px solid var(--bg-color);
       }
@@ -68,7 +68,6 @@
     }
   }
 
-  
   &__img {
     width: 64px;
     height: 64px;
@@ -114,7 +113,7 @@
     }
   }
 
-  @media screen and (width > 640px) {
+  @media screen and (width > 639px) {
     padding-bottom: 0px;
     &__conten-descr {
       font-size: 24px;
@@ -160,7 +159,6 @@
         .services__item-border {
           padding: 35px 37px 5px;
           min-height: 288px;
-
         }
       }
     }

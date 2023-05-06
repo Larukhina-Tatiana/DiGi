@@ -34,7 +34,6 @@
         opacity: 1;
       }
     }
-
   }
 
   &__item-inner {
@@ -86,7 +85,7 @@
   }
 
 
-  @media screen and (width > 640px) {
+  @media screen and (width > 639px) {
     padding: 40px 0 20px;
 
     &__item-img {
@@ -112,7 +111,7 @@
     }
   }
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
     padding: 80px 0 60px;
 
     &__title {
@@ -157,10 +156,6 @@
       justify-content: center;
     }
 
-    // &__item-img {
-    //   margin: 0 12px;
-    // }
-
     &__item-inner {
       gap: 0 15px;
     }
@@ -172,10 +167,6 @@
       flex-wrap: nowrap;
       justify-content: center;
       gap: 0 21px;
-    }
-
-    &__item-inner {
-      gap: 0 15px;
     }
   }
 }

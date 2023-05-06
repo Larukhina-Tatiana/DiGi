@@ -35,11 +35,11 @@
     &:focus {
       background-color: var(--accent);
       color: var(--bg-color);
-      border: 1px solid  var(--bg-color);
+      border: 1px solid var(--bg-color);
     }
   }
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
     padding-top: 60px;
     padding-bottom: 30px;
 
@@ -65,16 +65,18 @@
       min-height: 50px;
     }
   }
-  @media screen and (width > 1024px) {
+
+  @media screen and (width > 1023px) {
     &__inner {
       max-width: 695px;
     }
   }
 
-  @media screen and (width > 1440px) {
-&__wrapper {
-  padding: 0 80px;
-}
+  @media screen and (width > 1439px) {
+    &__wrapper {
+      padding: 0 80px;
+    }
+
     &__inner {
       max-width: 796px;
     }

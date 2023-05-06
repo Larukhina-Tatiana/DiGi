@@ -16,14 +16,17 @@
     &__header {
       margin-left: 14px;
     }
+
     &__footer {
       margin-bottom: 54px;
     }
   }
+
   @media screen and (width > 767px) {
     &__header {
       margin-left: 0;
     }
+
     &__footer {
       margin-bottom: 84px;
     }
