@@ -1,0 +1,98 @@
+// .testimonial .slick-prev.slick-arrow {
+
+//   overflow: hidden;
+//   display: none;
+// }
+
+.testimonial {
+  padding: 60px 0 40px;
+  font-family: 'RobotoCondensed';
+  text-align: center;
+
+  &__blockquote {
+    position: relative;
+    padding-top: 100px;
+
+    &::before {
+      position: absolute;
+      content: url(/images/icons/pngwing.com.png);
+      font-size: 34px;
+      line-height: 14px;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: var(--accent);
+    }
+  }
+
+
+  &__blockquote p {
+    padding: 0 8px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: calc(26/24);
+    color: var(--grey);
+
+    & span {
+      font-weight: 700;
+      color: var(--accent);
+    }
+  }
+
+  &__blockquote-name {
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    letter-spacing: 2px;
+    color: var(--grey);
+  }
+
+  @media screen and (width > 639px) {
+
+    &__blockquote {
+      position: relative;
+      padding-top: 40px;
+    }
+
+
+    &__blockquote p {
+      padding: 0 18px;
+      font-size: 32px;
+      line-height: calc(34/32);
+    }
+
+    &__blockquote-name {
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (width > 1023px) {
+    padding: 100px 0 80px;
+
+    &__blockquote {
+      padding-top: 44px;
+    }
+    &__blockquote p {
+      padding: 0 18px;
+      font-size: 32px;
+      line-height: calc(38/32);
+    }
+
+    &__blockquote-name {
+      margin-top: 45px;
+      margin-bottom: 80px;
+      line-height: calc(28/20);
+    }
+  }
+
+  @media screen and (width > 1439px) {
+
+    &__blockquote p {
+      font-size: 36px;
+      line-height: calc(42/36);
+    }
+  }
+}

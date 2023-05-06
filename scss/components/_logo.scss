@@ -1,16 +1,37 @@
 .logo {
-  &__link {
+  &__header {
     margin-left: 8px;
   }
 
-  @media screen and (width > 640px) {
-    &__link {
+  &__footer {
+    margin-top: -30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 55px;
+    padding: 0 74px;
+    background-color: var(--accent);
+  }
+
+  @media screen and (width > 639px) {
+    &__header {
       margin-left: 14px;
     }
+    &__footer {
+      margin-bottom: 54px;
+    }
   }
-  @media screen and (width > 768px) {
-    &__link {
+  @media screen and (width > 767px) {
+    &__header {
       margin-left: 0;
+    }
+    &__footer {
+      margin-bottom: 84px;
+    }
+  }
+
+  @media screen and (width > 1023px) {
+    &__footer {
+      margin-bottom: 128px;
     }
   }
 }
