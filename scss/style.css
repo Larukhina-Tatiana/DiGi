@@ -187,7 +187,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid green;
 }
 @media screen and (width > 640px) {
   .header__inner {
@@ -1063,7 +1062,7 @@ button {
 }
 .testimonial__blockquote::before {
   position: absolute;
-  content: url(/images/icons/pngwing.com.png);
+  content: url(../images/icons/pngwing.com.png);
   font-size: 34px;
   line-height: 14px;
   top: 0;
