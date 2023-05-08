@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Di Gi</title>
   <link rel="stylesheet" href="scss/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -57,7 +58,8 @@
             <p class="promo__text">Мы предоставляем комплексный подход к продвижению компании,
               продуктов и услуг в цифровой сфере.</p>
           </div>
-          <button class="promo__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+          <!-- <button class="promo__btn">ПЕРЕЗВОНИТЕ МНЕ</button> -->
+          <a class="promo__btn" href="tel:+38050555566">ПЕРЕЗВОНИТЕ МНЕ</a>
         </div>
       </div>
 
@@ -315,24 +317,27 @@
     <section class="testimonial">
       <div class="container">
         <h3 class="testimonial__title subtitle visually-hidden">Цитаты</h3>
-        <div class="testimonial__slider">
-          <blockquote class="testimonial__blockquote">
-            <p>Если нужно создавать либо повышать имидж компании,</p>
-            <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
-            <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
-          </blockquote>
-          <!-- <blockquote class="testimonial__blockquote">
-            <p>Если нужно создавать либо повышать имидж компании,</p>
-            <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
-            <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
-          </blockquote>
-          <blockquote class="testimonial__blockquote">
-            <p>Если нужно создавать либо повышать имидж компании,</p>
-            <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
-            <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
-          </blockquote> -->
-
+        <div class="testimonial__slider "> 
+          <!-- <div class="swiper-wrapper"> -->
+            <blockquote class="testimonial__blockquote">
+              <p>Если нужно создавать либо повышать имидж компании,</p>
+              <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
+              <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
+            </blockquote>
+            <blockquote class="testimonial__blockquote">
+              <p>Если нужно создавать либо повышать имидж компании,</p>
+              <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
+              <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
+            </blockquote>
+            <blockquote class="testimonial__blockquote">
+              <p>Если нужно создавать либо повышать имидж компании,</p>
+              <p>то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
+              <cite class="testimonial__blockquote-name">- Маргарита Акулич</cite>
+            </blockquote>
+          <!-- </div> -->
         </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
     </section>
   </main>
@@ -418,6 +423,7 @@
     </div>
 
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
